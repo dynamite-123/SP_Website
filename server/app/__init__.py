@@ -1,11 +1,11 @@
 # API Routes
-from .routers import users, items
+from .routers import users, auth
 
-# Models
-from .models import user, item
+# Schemas
+from .schemas import user
 
 # Database
-from .database import database
+from .database import get_db, create_tables
 
 # Core utilities
 from .core import config, oauth2
